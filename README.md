@@ -1,6 +1,6 @@
 # Personal LLM Wiki
 
-LLM이 유지/관리하는 개인 지식 위키. Andrej Karpathy의 [LLM Wiki](https://github.com/karpathy/llm-wiki) 아이디어에 기반.
+LLM이 유지/관리하는 개인 지식 위키. [GeekNews - LLM Wiki](https://news.hada.io/topic?id=28208) 아티클에서 얻은 아이디어에 기반.
 
 ## Quick Start
 
