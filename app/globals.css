@@ -5,9 +5,13 @@
   /* Clean dashboard palette */
   --nextra-primary-hue: 220deg;
   --nextra-primary-saturation: 60%;
+
+  /* Force white background */
+  color-scheme: light;
 }
 
 html {
+  background-color: #fff !important;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

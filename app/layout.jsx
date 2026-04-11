@@ -11,7 +11,7 @@ export const metadata = {
 
 export default async function RootLayout({ children }) {
   return (
-    <html lang="ko" dir="ltr" suppressHydrationWarning>
+    <html lang="ko" dir="ltr" data-theme="light" suppressHydrationWarning>
       <Head>
         <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         <link
