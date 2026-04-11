@@ -1,8 +1,5 @@
 ---
 title: Cross-Domain Analysis
-type: moc
-created: 2026-04-11
-updated: 2026-04-11
 ---
 
 # Cross-Domain Analysis
@@ -11,8 +8,8 @@ updated: 2026-04-11
 
 ## Comparisons
 
-_No cross-domain analyses yet._
+아직 교차 도메인 분석이 없습니다.
 
 ## Patterns
 
-_No cross-domain patterns yet._
+아직 교차 도메인 패턴이 없습니다.

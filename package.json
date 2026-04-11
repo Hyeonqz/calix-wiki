@@ -1,0 +1,29 @@
+{
+  "name": "wiki",
+  "version": "1.0.0",
+  "description": "LLM이 유지/관리하는 개인 지식 위키. [GeekNews - LLM Wiki](https://news.hada.io/topic?id=28208) 아티클에서 얻은 아이디어에 기반.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyeonqz/calix-wiki.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hyeonqz/calix-wiki/issues"
+  },
+  "homepage": "https://github.com/Hyeonqz/calix-wiki#readme",
+  "dependencies": {
+    "next": "^16.2.3",
+    "nextra": "^4.6.1",
+    "nextra-theme-docs": "^4.6.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}

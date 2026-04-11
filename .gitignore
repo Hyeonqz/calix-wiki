@@ -5,3 +5,8 @@
 *~
 .claude/
 .omc/
+
+# Next.js
+.next/
+out/
+node_modules/
