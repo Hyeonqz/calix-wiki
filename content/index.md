@@ -10,11 +10,7 @@ LLM이 유지/관리하는 개인 지식 베이스.
 
 ## Domains
 
-아직 등록된 도메인이 없습니다. 소스를 ingest하면 도메인이 자동으로 생성됩니다.
-
-```
-예시) spring-boot, nestjs, nextjs, database, devops ...
-```
+- [Claude Code](/claude-code) — Anthropic의 공식 CLI 코딩 에이전트. 설정, 훅, skill, subagent, MCP 등
 
 ## Cross-Domain
 
