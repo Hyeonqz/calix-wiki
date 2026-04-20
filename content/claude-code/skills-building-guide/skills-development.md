@@ -149,6 +149,6 @@ description: [...]
 
 ## Related
 
-- [Skills 개요](/claude-code/skills-overview) — 스킬 개념, 설계 원칙, 파일 구조
-- [Skills 테스트](/claude-code/skills-testing) — 트리거/기능/성능 테스트
-- [Skills 패턴 및 트러블슈팅](/claude-code/skills-patterns) — 워크플로 패턴
+- [Skills 개요](/claude-code/skills-building-guide/skills-overview) — 스킬 개념, 설계 원칙, 파일 구조
+- [Skills 테스트](/claude-code/skills-building-guide/skills-testing) — 트리거/기능/성능 테스트
+- [Skills 패턴 및 트러블슈팅](/claude-code/skills-building-guide/skills-patterns) — 워크플로 패턴

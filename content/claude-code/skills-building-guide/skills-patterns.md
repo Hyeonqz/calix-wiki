@@ -151,7 +151,7 @@ title: Skills 패턴 및 트러블슈팅
 
 ## Related
 
-- [Skills 개요](/claude-code/skills-overview) — 스킬 개념, 설계 원칙
-- [Skills 개발 가이드](/claude-code/skills-development) — 사용 사례, 명령어 작성법
-- [Skills 테스트](/claude-code/skills-testing) — 테스트, skill-creator
-- [Skills 배포](/claude-code/skills-deployment) — 배포 모델, API
+- [Skills 개요](/claude-code/skills-building-guide/skills-overview) — 스킬 개념, 설계 원칙
+- [Skills 개발 가이드](/claude-code/skills-building-guide/skills-development) — 사용 사례, 명령어 작성법
+- [Skills 테스트](/claude-code/skills-building-guide/skills-testing) — 테스트, skill-creator
+- [Skills 배포](/claude-code/skills-building-guide/skills-deployment) — 배포 모델, API

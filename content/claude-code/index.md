@@ -28,11 +28,7 @@ Anthropic의 공식 CLI 코딩 에이전트. 터미널, 데스크탑 앱, 웹, I
 
 ### 스킬
 
-- [Skills 개요](/claude-code/skills-overview) — 스킬 개념, 설계 원칙, 파일 구조, 프론트매터
-- [Skills 개발 가이드](/claude-code/skills-development) — 사용 사례 카테고리, 성공 기준, 명령어 작성법
-- [Skills 테스트](/claude-code/skills-testing) — 트리거/기능/성능 테스트, skill-creator, 피드백 반복
-- [Skills 배포](/claude-code/skills-deployment) — 배포 모델, API, 포지셔닝
-- [Skills 패턴 및 트러블슈팅](/claude-code/skills-patterns) — 5가지 워크플로 패턴, 문제 해결
+- [Skills 구축 완벽 가이드](/claude-code/skills-building-guide) — Anthropic 공식 가이드 정리. 개념/개발/테스트/배포/패턴 5개 하위 페이지
 
 ### 학습 예정
 
@@ -46,7 +42,7 @@ Anthropic의 공식 CLI 코딩 에이전트. 터미널, 데스크탑 앱, 웹, I
 ## Sources
 
 - [Source — WikiDocs 기초](/claude-code/src-wikidocs-foundations) — 2026-04-15 ingest. 세션·권한·컨텍스트·CLAUDE.md 4개 영역
-- [Source — Skills 구축 완벽 가이드](/claude-code/src-skills-building-guide) — 2026-04-15 ingest. Anthropic 공식 스킬 가이드
+- [Skills 구축 완벽 가이드](/claude-code/skills-building-guide) — 2026-04-15 ingest. Anthropic 공식 스킬 가이드 (하위 섹션)
 
 ## Cross-Domain
 

@@ -108,8 +108,8 @@ description: 프로젝트에 도움을 줍니다.
 
 ## Related
 
-- [Skills 개발 가이드](/claude-code/skills-development) — 사용 사례, 성공 기준, 명령어 작성
-- [Skills 테스트](/claude-code/skills-testing) — 트리거/기능/성능 테스트, skill-creator
-- [Skills 배포](/claude-code/skills-deployment) — 배포 모델, API, 포지셔닝
-- [Skills 패턴 및 트러블슈팅](/claude-code/skills-patterns) — 5가지 워크플로 패턴, 문제 해결
+- [Skills 개발 가이드](/claude-code/skills-building-guide/skills-development) — 사용 사례, 성공 기준, 명령어 작성
+- [Skills 테스트](/claude-code/skills-building-guide/skills-testing) — 트리거/기능/성능 테스트, skill-creator
+- [Skills 배포](/claude-code/skills-building-guide/skills-deployment) — 배포 모델, API, 포지셔닝
+- [Skills 패턴 및 트러블슈팅](/claude-code/skills-building-guide/skills-patterns) — 5가지 워크플로 패턴, 문제 해결
 - [CLAUDE.md 작성법](/claude-code/claude-md-best-practices) — 프로젝트 지침 파일
