@@ -26,11 +26,18 @@ Anthropic의 공식 CLI 코딩 에이전트. 터미널, 데스크탑 앱, 웹, I
 - [Context Management](/claude-code/context-management) — `/clear`, `/compact`, `/context`, 자동 압축
 - [CLAUDE.md Best Practices](/claude-code/claude-md-best-practices) — 무엇을 넣고 무엇을 빼나, 200줄 룰
 
+### 스킬
+
+- [Skills 개요](/claude-code/skills-overview) — 스킬 개념, 설계 원칙, 파일 구조, 프론트매터
+- [Skills 개발 가이드](/claude-code/skills-development) — 사용 사례 카테고리, 성공 기준, 명령어 작성법
+- [Skills 테스트](/claude-code/skills-testing) — 트리거/기능/성능 테스트, skill-creator, 피드백 반복
+- [Skills 배포](/claude-code/skills-deployment) — 배포 모델, API, 포지셔닝
+- [Skills 패턴 및 트러블슈팅](/claude-code/skills-patterns) — 5가지 워크플로 패턴, 문제 해결
+
 ### 학습 예정
 
 - `hooks` — 도구 호출 전후 검증 로직, defense-in-depth 2층
 - `sandbox` — 격리 실행 환경, defense-in-depth 3층
-- `skills` — 자주 안 쓰는 지침을 분리해 필요 시만 로드
 - `subagents` — Agent 도구, 작업 위임 패턴
 - `mcp-servers` — Model Context Protocol 서버 통합
 - `ide-integration` — VS Code, JetBrains 등
@@ -39,6 +46,7 @@ Anthropic의 공식 CLI 코딩 에이전트. 터미널, 데스크탑 앱, 웹, I
 ## Sources
 
 - [Source — WikiDocs 기초](/claude-code/src-wikidocs-foundations) — 2026-04-15 ingest. 세션·권한·컨텍스트·CLAUDE.md 4개 영역
+- [Source — Skills 구축 완벽 가이드](/claude-code/src-skills-building-guide) — 2026-04-15 ingest. Anthropic 공식 스킬 가이드
 
 ## Cross-Domain
 
