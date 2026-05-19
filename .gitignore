@@ -6,6 +6,9 @@
 .claude/
 .omc/
 
+# IDE
+.idea/
+
 # Next.js
 .next/
 out/
