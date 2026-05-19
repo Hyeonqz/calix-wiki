@@ -1,6 +1,7 @@
 import { Footer, Layout, Navbar } from 'nextra-theme-docs'
 import { Head } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
+import Link from 'next/link'
 import 'nextra-theme-docs/style.css'
 import './globals.css'
 
@@ -25,7 +26,14 @@ export default async function RootLayout({ children }) {
             <Navbar
               logo={<span style={{ fontWeight: 700, fontSize: '1.1rem' }}>Calix Wiki</span>}
               projectLink="https://github.com/Hyeonqz/calix-wiki"
-            />
+            >
+              <Link
+                href="/til"
+                style={{ fontSize: '0.9rem', fontWeight: 600, opacity: 0.8 }}
+              >
+                TIL
+              </Link>
+            </Navbar>
           }
           footer={<Footer>MIT {new Date().getFullYear()} © Calix</Footer>}
           pageMap={await getPageMap()}
