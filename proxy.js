@@ -13,5 +13,5 @@ export function proxy(request) {
 }
 
 export const config = {
-  matcher: ['/til/:path*'],
+  matcher: ['/til', '/til/:path*'],
 }

@@ -3,6 +3,9 @@ import path from 'path'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
+import rehypeHighlight from 'rehype-highlight'
+import 'highlight.js/styles/github-dark.css'
 
 export async function generateMetadata({ params }) {
   const { date } = await params
@@ -24,7 +27,7 @@ export default async function TilDetailPage({ params }) {
       <Link href="/til" style={styles.back}>← 목록으로</Link>
       <h1 style={styles.heading}>{date}</h1>
       <article style={styles.article}>
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>{content}</ReactMarkdown>
       </article>
     </div>
   )

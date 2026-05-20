@@ -20,11 +20,14 @@
   },
   "homepage": "https://github.com/Hyeonqz/calix-wiki#readme",
   "dependencies": {
+    "highlight.js": "^11.11.1",
     "next": "^16.2.3",
     "nextra": "^4.6.1",
     "nextra-theme-docs": "^4.6.1",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-markdown": "^10.1.0"
+    "react-markdown": "^10.1.0",
+    "rehype-highlight": "^7.0.2",
+    "remark-gfm": "^4.0.1"
   }
 }
