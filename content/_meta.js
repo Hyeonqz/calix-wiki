@@ -12,6 +12,9 @@ export default {
   concepts: {
     title: 'Concepts'
   },
+  'ai-harness': {
+    title: 'AI Harness'
+  },
   'cross-domain': {
     title: 'Cross-Domain'
   },
