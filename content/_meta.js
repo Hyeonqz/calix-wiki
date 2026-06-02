@@ -15,6 +15,9 @@ export default {
   'ai-harness': {
     title: 'AI Harness'
   },
+  spring: {
+    title: 'Spring'
+  },
   'cross-domain': {
     title: 'Cross-Domain'
   },
