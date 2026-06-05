@@ -32,8 +32,5 @@ export default {
   },
   login: {
     display: 'hidden'
-  },
-  til: {
-    display: 'hidden'
   }
 }

@@ -21,11 +21,15 @@ export default async function TilDetailPage({ params }) {
     notFound()
   }
 
-  const content = fs.readFileSync(filePath, 'utf-8')
-
+  let content
+  try {
+    content = fs.readFileSync(filePath, 'utf-8')
+  } catch {
+    notFound()
+  }
   const allDates = fs.readdirSync(tilDir)
-    .filter((f) => f.endsWith('.md'))
-    .map((f) => f.replace('.md', ''))
+    .filter((file) => /^\d{4}-\d{2}-\d{2}\.md$/.test(file))
+    .map((file) => file.replace('.md', ''))
     .sort()
 
   const currentIndex = allDates.indexOf(date)
@@ -33,13 +37,18 @@ export default async function TilDetailPage({ params }) {
   const nextDate = currentIndex < allDates.length - 1 ? allDates[currentIndex + 1] : null
 
   return (
-    <div style={styles.wrapper}>
-      <Link href="/til" style={styles.back}>← 목록으로</Link>
-      <h1 style={styles.heading}>{date}</h1>
+    <main style={styles.wrapper}>
+      <Link href="/til" style={styles.back}>← TIL 목록</Link>
+      <header style={styles.header}>
+        <p style={styles.kicker}>Daily Note</p>
+        <h1 style={styles.heading}>{date}</h1>
+      </header>
       <article style={styles.article}>
-        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>{content}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeHighlight]}>
+          {content}
+        </ReactMarkdown>
       </article>
-      <nav style={styles.nav}>
+      <nav style={styles.nav} aria-label="TIL 날짜 이동">
         {prevDate ? (
           <Link href={`/til/${prevDate}`} style={styles.navLink}>← {prevDate}</Link>
         ) : <span />}
@@ -47,45 +56,60 @@ export default async function TilDetailPage({ params }) {
           <Link href={`/til/${nextDate}`} style={styles.navLink}>{nextDate} →</Link>
         ) : <span />}
       </nav>
-    </div>
+    </main>
   )
 }
 
 const styles = {
   wrapper: {
-    maxWidth: '1130px',
+    maxWidth: '920px',
     margin: '0 auto',
-    padding: '2rem 1rem',
+    padding: '2.5rem 1rem 4rem',
   },
   back: {
     display: 'inline-block',
     marginBottom: '1.25rem',
-    color: '#2563eb',
+    color: '#0f766e',
     textDecoration: 'none',
     fontSize: '0.9rem',
-  },
-  heading: {
-    fontSize: '1.75rem',
     fontWeight: 700,
+  },
+  header: {
     marginBottom: '1.5rem',
     borderBottom: '1px solid var(--nextra-border, #e5e7eb)',
-    paddingBottom: '0.75rem',
+    paddingBottom: '1rem',
+  },
+  kicker: {
+    margin: '0 0 0.35rem',
+    color: '#6b7280',
+    fontSize: '0.82rem',
+    fontWeight: 800,
+    letterSpacing: 0,
+    textTransform: 'uppercase',
+  },
+  heading: {
+    margin: 0,
+    fontSize: '2rem',
+    lineHeight: 1.2,
+    fontWeight: 820,
+    letterSpacing: 0,
   },
   article: {
     lineHeight: 1.8,
-    fontSize: '0.95rem',
+    fontSize: '0.96rem',
   },
   nav: {
     display: 'flex',
     justifyContent: 'space-between',
-    marginTop: '2rem',
+    gap: '1rem',
+    marginTop: '2.25rem',
     paddingTop: '1rem',
     borderTop: '1px solid var(--nextra-border, #e5e7eb)',
   },
   navLink: {
-    color: '#2563eb',
+    color: '#0f766e',
     textDecoration: 'none',
     fontSize: '0.9rem',
-    fontWeight: 500,
+    fontWeight: 750,
   },
 }
