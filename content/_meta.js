@@ -18,6 +18,9 @@ export default {
   spring: {
     title: 'Spring'
   },
+  database: {
+    title: 'Database'
+  },
   'cross-domain': {
     title: 'Cross-Domain'
   },

@@ -11,6 +11,7 @@ LLM이 유지/관리하는 개인 지식 베이스.
 ## Domains
 
 - [Claude Code](/claude-code) — Anthropic의 공식 CLI 코딩 에이전트. 설정, 훅, skill, subagent, MCP 등
+- [Database](/database) — RDB 스키마 설계, 타입 선택(시간/숫자), 인덱싱, 쿼리 최적화
 
 ## Cross-Domain
 
